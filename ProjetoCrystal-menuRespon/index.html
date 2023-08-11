@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="smartphone.css">
+    <script src="https://kit.fontawesome.com/6d874d2059.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <h1 class="nome">CRYSTAL</h1>
+            </div>
+            <nav id="nav-header" class="menu">
+                <a class="item">Inicio</a>
+                <a class="item">Planos</a>
+                <a class="item">Contato</a>
+            </nav>
+        </div>
+            <a class="menu-barras" onclick="mostrarMenu()">
+                <span id="icone" class="fa-solid fa-bars"></span>
+            </a>
+        
+    </header>
+
+    <main id="main">
+        <section class="section primeira">
+            <div class="container">
+                <div class="conteudo">
+                    <h2 class="titulo">CRYSTAL</h2>
+                    <p class="texto">O sistema de controle financeiro para empresas.</p>
+                </div>
+                <div class="imagem">
+                    <img src="ProjetoCrystal-main/img/mulher.png" alt="Mulher acenando">
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container">
+                <div class="caixas">
+                    <div class="caixa">
+                        <div class="imagem">
+                            <img src="ProjetoCrystal-main/img/planner.svg" alt="">
+                        </div>
+                        <p class="texto">Automatize contas a pagar e receber</p>
+                    </div>
+
+                    <div class="caixa">
+                        <div class="imagem">
+                            <img src="ProjetoCrystal-main/img/check.svg" alt="">
+                            <p class="texto">Facilite sua rotina com conciliação bancária</p>
+                        </div>
+                    </div>
+
+                    <div class="caixa">
+                        <div class="imagem">
+                            <img src="ProjetoCrystal-main/img/caneta.svg" alt="">
+                            <p class="texto">Gerencie seu fluxo de caixa</p>
+                        </div>
+                    </div>
+
+                    <div class="caixa">
+                        <div class="imagem">
+                            <img src="ProjetoCrystal-main/img/calendario.svg" alt="">
+                            <p class="texto">Conte com serviços recorrentes</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="conteudo">
+                    <h3 class="titulo">PLANOS CRYSTAL</h3>
+                    <p class="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure fuga cupiditate ea rerum optio, laborum nisi eius eaque ipsum magni in et? Incidunt consequuntur libero nostrum quas placeat? Nihil, dicta Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia labore quibusdam perferendis deleniti nihil corrupti veniam voluptatibus, ut animi ea quo perspiciatis eligendi doloribus vitae recusandae eos soluta similique amet.</p>
+                </div>
+                <div class="planos">
+                    <div class="plano">
+                        <div class="plano-nome">
+                            <p class="plano-tipo">BÁSICO</p>
+                        </div>
+                        <div class="linha-la"></div>
+                        <div class="plano-itens">
+                            <p class="beneficio">DRE gerencial e relatórios financeiros</p>
+                            <p class="beneficio">Emita boletos pelo sistema</p>
+                            <p class="beneficio basico">Cash in-out</p>
+                            <p class="beneficio basico">Cadastros de acesso</p>
+                        </div>
+                        <div class="valor">
+                            <p class="preco">R$ XX.XX</p>
+                        </div>
+                    </div>
+                    <div class="plano">
+                        <div class="plano-nome">
+                            <p class="plano-tipo">PREMIUM</p>
+                        </div>
+                        <div class="linha-le"></div>
+                        <div class="plano-itens">
+                            <p class="beneficio">DRE gerencial e relatórios financeiros</p>
+                            <p class="beneficio">Emita boletos pelo sistema</p>
+                            <p class="beneficio basico">Cash in-out</p>
+                            <p class="beneficio basico">Cadastros de acesso</p>
+                        </div>
+                        <div class="valor">
+                            <p class="preco">R$ XX.XX</p>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <nav class="menu">
+                <a href="" class="item">Inicio</a>
+                <a href="" class="item">Planos</a>
+                <a href="" class="item">Contato</a>
+            </nav>
+            <div class="news">
+                <div class="conteudo">
+                    <p class="texto">Se inscreva e receba as principais noticias sobre finanças:</p>
+                </div>
+                <div class="forms">
+                    <form>
+                        <input type="email">
+                        <button>Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function mostrarMenu() {
+            var menu = document.getElementById("nav-header");
+            var icone = document.getElementById("icone");
+
+            if (getComputedStyle(menu).display == 'none') {
+                menu.style.display = "flex";
+                icone.classList.remove("fa-solid fa-bars");
+                icone.classList.add("fa-times");
+            } else {
+                menu.style.display = "none";
+                icone.classList.remove("fa-times");
+                icone.classList.add("fa-bars");
+            }
+        }
+    </script>
+</body>
+</html>
